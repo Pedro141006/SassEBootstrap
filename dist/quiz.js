@@ -96,5 +96,5 @@ $btnverify3.addEventListener('click', () => {
 })
 $btnBack.addEventListener('click', () => {
   window.location.href = '#'
-  window.location.reload()
+  //   window.location.reload(true)
 })

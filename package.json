@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tsc": "tsc -w"
+    "tsc": "tsc "
   },
   "author": "@Pedro",
   "license": "ISC",

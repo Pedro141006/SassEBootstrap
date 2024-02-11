@@ -95,6 +95,6 @@ $btnverify3.addEventListener('click', () => {
   $resultCard.innerHTML = `${numbersOfHits}/3`
 })
 $btnBack.addEventListener('click', () => {
-  window.location.href = './src/pages/quizpage.html'
+  window.location.href = '#'
   window.location.reload()
 })

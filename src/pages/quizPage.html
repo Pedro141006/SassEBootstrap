@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <!-- bootstrap styles -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- animations texts styles -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- styles -->
+    <link rel="stylesheet" href="/src/styles/quizPage.css" />
+  </head>
+  <body>
+    <!-- content -->
+    <!-- header -->
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#"
+            ><i class="fa-solid fa-rocket"></i>Space</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon bar">
+              <span class="bars"></span>
+              <span class="bars"></span>
+              <span class="bars"></span
+            ></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="./homePage.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./newsPage.html">News</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-light"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  More...
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Quiz</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="/index.html">log-out</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div
+        id="liveToast"
+        class="toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <strong class="me-auto"
+            ><i class="fa-solid fa-rocket"></i>Space</strong
+          >
+          <small>Now</small>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-body"></div>
+      </div>
+    </div>
+    <section class="start">
+      <button class="btnStart">
+        <svg
+          height="24"
+          width="24"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 0h24v24H0z" fill="none"></path>
+          <path
+            d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+            fill="currentColor"
+          ></path>
+        </svg>
+        <span><a href="#1">Start Quiz</a></span>
+      </button>
+    </section>
+    <!-- section1 -->
+    <section class="section1" id="1">
+      <div class="box1">
+        <div class="question">
+          <p class="text">which was year realese the first spaceship?</p>
+        </div>
+        <hr class="break" />
+        <div class="ansawers">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              value="wrong"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault1"
+            />
+            <label class="form-check-label" for="flexRadioDefault1">
+              1960
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              value="wrong"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault2"
+            />
+            <label class="form-check-label" for="flexRadioDefault2">
+              1958
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              value="correct"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault3"
+            />
+            <label class="form-check-label" for="flexRadioDefault3">
+              1961
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              value="wrong"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault4"
+            />
+            <label class="form-check-label" for="flexRadioDefault4">
+              1950
+            </label>
+          </div>
+        </div>
+        <button class="btn btn-primary verify1">verify</button>
+      </div>
+    </section>
+    <!-- section2 -->
+    <section class="section2" id="2">
+      <div class="box2">
+        <div class="question">
+          <p class="text">
+            what the name of first living creature at a gotta the space?
+          </p>
+        </div>
+        <hr class="break" />
+        <div class="ansawers">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              value="correct"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault5"
+            />
+            <label class="form-check-label" for="flexRadioDefault5">
+              Laika
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              value="wrong"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault6"
+            />
+            <label class="form-check-label" for="flexRadioDefault6">
+              Felix
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              value="wrong"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault7"
+            />
+            <label class="form-check-label" for="flexRadioDefault7">
+              Neil Armstrong
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              value="wrong"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault8"
+            />
+            <label class="form-check-label" for="flexRadioDefault8">
+              Yuri Gagarin
+            </label>
+          </div>
+        </div>
+        <button class="btn btn-primary verify2">verify</button>
+      </div>
+    </section>
+    <!-- section3 -->
+    <section class="section3" id="3">
+      <div class="box3">
+        <div class="question">
+          <p class="text">What the first country to step moon?</p>
+        </div>
+        <hr class="break" />
+        <div class="ansawers">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              value="wrong"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault9"
+            />
+            <label class="form-check-label" for="flexRadioDefault9">
+              URSS
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              value="correct"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault10"
+            />
+            <label class="form-check-label" for="flexRadioDefault10">
+              USA
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              value="wrong"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault11"
+            />
+            <label class="form-check-label" for="flexRadioDefault11">
+              Índia
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              value="wrong"
+              type="radio"
+              name="flexRadioDefault"
+              id="flexRadioDefault12"
+            />
+            <label class="form-check-label" for="flexRadioDefault12">
+              China
+            </label>
+          </div>
+        </div>
+        <button class="btn btn-primary verify3">verify</button>
+      </div>
+    </section>
+    <!-- endScreen -->
+    <section class="end" id="end">
+      <div class="gatificationCard">
+        <h2 class="titleCard"></h2>
+        <small>result</small>
+        <h3 class="resultCard"></h3>
+        <button class="btn btn-primary back">Back</button>
+      </div>
+    </section>
+    <!-- bootstrap scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- animations texts scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
+
+    <!-- icons -->
+    <script
+      src="https://kit.fontawesome.com/585852beda.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- mainScript -->
+    <script src="/dist/quiz.js"></script>
+  </body>
+</html>

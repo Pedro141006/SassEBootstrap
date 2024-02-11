@@ -1,0 +1,60 @@
+body {
+  background: linear-gradient(169deg, #7e7e7e 0%, #373737 50%);
+}
+
+header {
+  height: 8vh;
+  width: 100%;
+}
+
+.navbar {
+  z-index: 2;
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.bars {
+  border: 1.5px solid #fff;
+  width: 100%;
+}
+
+.dropdown-item:hover {
+  background: #dbdbdb;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: row;
+  padding: 24px;
+  width: 100%;
+  align-items: center;
+}
+.section1 .cardsNewsSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.section1 .card {
+  max-width: 250px;
+  max-height: auto;
+}
+.section1 .card .img {
+  max-height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+.section1 .card .card-text {
+  max-height: 150px;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*# sourceMappingURL=newsPage.css.map */

@@ -1,0 +1,14 @@
+{
+  "name": "projetosassebootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc -w"
+  },
+  "author": "@Pedro",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

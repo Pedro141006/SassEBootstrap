@@ -1,0 +1,121 @@
+body {
+  overflow-x: hidden;
+}
+
+header {
+  height: 8vh;
+  width: 100%;
+}
+
+.navbar {
+  z-index: 2;
+}
+
+.bar {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.bars {
+  border: 1.5px solid #fff;
+  width: 100%;
+}
+
+.dropdown-item:hover {
+  background: #dbdbdb;
+}
+
+.section1 {
+  background-image: url(https://images.unsplash.com/photo-1627556592933-ffe99c1cd9eb?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  display: flex;
+  flex-direction: row;
+  padding: 12px;
+  height: 92vh;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  gap: 2rem;
+}
+.section1 .txt {
+  background-color: rgba(0, 0, 0, 0.562);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.651);
+  backdrop-filter: blur(18px);
+  max-width: 55rem;
+}
+.section1 .notice {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  background: #313131;
+  overflow-y: auto;
+  max-height: 500px;
+  max-width: 300pxpx;
+  gap: 1rem;
+}
+.section1 .notice .card {
+  max-width: 250px;
+}
+.section1 .notice .card .img {
+  max-height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.section2 {
+  background-image: url(https://images.unsplash.com/photo-1590907047706-ee9c08cf3189?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.section2 .dialogs {
+  background-color: #313131;
+  color: #fff;
+  max-width: 400px;
+  border: 2px solid #f04045;
+  padding: 8px;
+  border-radius: 10px;
+}
+.section2 .dialogs.left {
+  align-self: flex-start;
+}
+.section2 .dialogs.right {
+  align-self: flex-end;
+}
+
+.section3 {
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.section3 .imgCarousel {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+.section3 .carousel-inner {
+  max-height: 100vh;
+  object-fit: cover;
+}
+
+@media (max-width: 1217px) {
+  .section1 {
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=homePage.css.map */
